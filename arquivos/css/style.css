@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+    background: linear-gradient(to bottom, #add8e6, hsl(350, 100%, 88%));
+    min-width:100dvw;
+    min-height:100dvh;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.hero{
+    user-select: none;
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    transform: translateY(-5%);
+}
+
+
+.footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100dvw;
+    bottom: 1vh;
+    padding: 10px;
+    text-align: center;
+}
+
+#nomes:hover,
+#copyright:hover{
+    color: red;
+    transition: color 0.5s;
+}
+
+.footer a,
+.footer p{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courgette', cursive;
+    font-size: 1rem;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@keyframes carregar {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+
+/* uma formiga */
+@media (min-width: 380px) {
+    .container{
+        max-width: 380px;
+    }
+}
+
+/* duas formiga */
+@media (min-width: 475px) {
+    .container{
+        max-width: 475px;
+    }
+}
+
+
+/* pequititito */
+@media (min-width: 640px) {
+    .container{
+        max-width: 640px;
+    }
+}
+
+
+/* tamanho ideal segundo 99% das mulheres */
+@media (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+
+    .footer a,
+    .footer p{
+    font-size: 1.6rem;
+}
+}
+
+/* attack on titan */
+@media (min-width: 1024px) {
+    .container{
+        max-width: 1024px;
+    }
+
+    .footer a,
+    .footer p{
+    font-size: 1.7rem;
+}
+}
+
+/* kid bengala */
+@media (min-width: 1280px) {
+    .container{
+        max-width: 1280px;
+    }
+
+    .footer a,
+    .footer p{
+    font-size: 1.8rem;
+}
+}
+
+/* o tempo até silk song sair */
+@media (min-width: 1536px) {
+    .container{
+        max-width: 1536px;
+    }
+
+    .footer a,
+    .footer p{
+    font-size: 1.9rem;
+}
+}
+
+/* no game no life season 2 */
+@media (min-width: 1736px) {
+    .container{
+        max-width: 1736px;
+    }
+
+    .footer a,
+    .footer p{
+    font-size: 2rem;
+}
+}
